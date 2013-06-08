@@ -1,0 +1,14 @@
+<h3> 登录 </h3>
+
+<%= form_tag session_path do%>
+  <label>
+    用户名：
+    <%= text_field_tag :name %>
+  </label>
+  <label>
+    密码：
+    <%= password_field_tag :password %>
+  </label>
+
+  <%= submit_tag "确定" %>
+<% end %>
